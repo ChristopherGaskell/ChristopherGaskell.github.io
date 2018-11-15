@@ -1,0 +1,36 @@
+function clock() {// We create a new Date object and assign it to a variable called "time".
+var time = new Date(),
+    
+    // Access the "getHours" method on the Date object with the dot accessor.
+    hours = time.getHours(),
+    
+    // Access the "getMinutes" method with the dot accessor.
+    minutes = time.getMinutes(),
+    
+    
+    seconds = time.getSeconds();
+
+document.querySelectorAll('.clock')[0].innerHTML = harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
+  
+  function harold(standIn) {
+    if (standIn < 10) {
+      standIn = '0' + standIn
+    }
+    return standIn;
+  }
+}
+setInterval(clock, 1000);
+
+(window).on('load resize', function(){
+  
+
+  var full = location.href.match(/full/),
+      h = $(window).height()
+      getWidth = $(window).width(),
+      getHeight = (full) ?  h + 69 : h;
+  
+  $('.dimensions').text(getWidth + ' x ' + getHeight);
+})
+
+
+
