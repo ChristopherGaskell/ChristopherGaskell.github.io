@@ -114,7 +114,6 @@ h1{
     padding: 0px;
     line-height: 23px;
     padding-right: 10px;
-    ::-webkit-font-smoothing: subpixel-antialiased;
 }
 h2{
     color: black;
@@ -125,7 +124,7 @@ h2{
     margin: 0px;
     padding: 0px;
     line-height: 23px;
-    ::-webkit-font-smoothing: subpixel-antialiased;
+    
 }
 .clock {
   color: black;
@@ -162,6 +161,27 @@ a:hover {
     padding:0px;
     background-color: transparent;
 }
+
+@media only screen and (max-width: 2560px) {
+.col1 {width: 15%;} 
+.col2 {width: 70%;}
+.col3 {width: 75%;}
+.col4 {width: 100%;}  
+
+.clock {
+    font-size: 18px;
+    line-height: 20px; }
+h1{
+    font-size: 18px;
+    line-height: 20px;
+    padding-right: 10px;
+}
+h2{
+    font-size: 18px;
+    line-height: 20px;}
+    
+}
+
 @media only screen and (max-width: 1280px) {
 .col1 {width: 20%;} 
 .col2 {width: 75%;}
@@ -171,10 +191,12 @@ a:hover {
 .clock {
     font-size: 12px;
     line-height: 13px; }
-.h1{
+h1{
     font-size: 12px;
-    line-height: 13px;}
-.h2{
+    line-height: 13px;
+    padding-right: 10px;
+}
+h2{
     font-size: 12px;
     line-height: 13px;}
     
