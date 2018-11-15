@@ -137,8 +137,7 @@ h2{
     padding: 0px;
     line-height: 23px;
     text-align:right;
-    ::-webkit-font-smoothing: subpixel-antialiased;
-    text-rendering: optimizeLegibility; 
+    text-rendering: geometricPrecision; 
     
 }
 .a:active,a:visited,a:link {
@@ -150,22 +149,6 @@ h2{
 a:hover {
     color: darkgrey; 
     }
-
-.bottomtext{
-    bottom: 0;
-    position: absolute;
-    padding-bottom: 20px;
-    margin: 0px;
-}
-.copyright{
-    bottom: 0;
-    right: 0;
-    text-align: right;
-    position: absolute;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    margin: 0px;
-}
 
 
 .col1 {width: 15%;} 
@@ -184,8 +167,16 @@ a:hover {
 .col2 {width: 75%;}
 .col3 {width: 75%;}
 .col4 {width: 100%;}  
-    
-    
+
+.clock {
+    font-size: 12px;
+    line-height: 13px; }
+.h1{
+    font-size: 12px;
+    line-height: 13px;}
+.h2{
+    font-size: 12px;
+    line-height: 13px;}
     
 }
 
@@ -201,7 +192,6 @@ h1{
     padding: 0px;
     line-height: 21px;
     padding-right: 10px;
-    ::-webkit-font-smoothing: subpixel-antialiased;
 }
 .clock {
     font-size: 18px;
@@ -213,17 +203,9 @@ h1{
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    ::-webkit-font-smoothing: subpixel-antialiased;
-    text-rendering: optimizeLegibility;  
+    text-rendering: geometricPrecision;  
 }
     
-    .bottomtext{
-    bottom: 0;
-    position: absolute;
-    padding-bottom: 16px;
-    margin: 0px;
-}
-
 .col1 {width: 100%;} 
 .col2 {width: 100%;}
 .col3 {width: 100%;}
@@ -235,9 +217,7 @@ h1{
     padding:0px;
     background-color: transparent;
     }
-.copyright{
-   display: none;
-}
+
 }
 
 
